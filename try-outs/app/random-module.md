@@ -91,7 +91,7 @@ plus we will generate synthetic data with false data and other constarints in be
 with event based we can test the schemas, trsnaformations, bad data, scalability, batch pipelines, partitioning, incremental processing, duplicates, skewed data and more.
 
 
-#### Testing 
+### 2. Testing 
 
 The question will no longer become `"Can I build this?"` to `"Does it work correctly?"` that is the most important part of the whole process.
 
@@ -102,7 +102,7 @@ The expected revenue will be 100 but it shows as 60 then the pipeline is wrong, 
 
 so synthetic data helps you create different inputs and test the behaviour.
 
-#### Simulation
+### 3. Simulation
 
 we will be asking questions like : `"What would happen if the real world behaved in a particular way"`, it would be like creating a artificial version of reality. 
 
@@ -116,7 +116,7 @@ so we must simulate different scenarios :
 
 Then we need to run the pipeline, in this way we study the system's behaviour where it could be lead to some unexpected output.
 
-#### Load Testing 
+### 4. Load Testing 
 
 we will try to focus on mainly on sheer volume of data, can the pipelien handle thousands or millions of data
 
@@ -146,7 +146,7 @@ So gradually increase the workload :
 `random` help to generate the synthetic data and scale or increase the load based on our requirements.
 By generating lots of data, we can start to analyse and measure the pipeline capability and then we peovide a transformed and cleaned data to stakeholders
 
-#### Failure Testing
+### 5. Failure Testing
 
 With this feature in our project we could simulate where could our pipeline go wrong or how it could go wrong, and how to anticipate the situation even if a new situation is found we need adapt to our testing simulate it with scale.
 
@@ -171,7 +171,7 @@ Pipeline
 
 does the pipeline crash, retry, wait, send and alert, skip the batch or not ? you would want to know before production
 
-#### Development
+### 6. Development
 
 Now we based on all the points we discussed till we can test it in a developement environment and resolve the issues it would reach the production. and in real production-grade data engineering, you'd often combine random with other tools specifically designed for synthetic data, testing, orchestration, and performance testing.
 
