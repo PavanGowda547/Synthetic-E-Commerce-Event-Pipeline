@@ -22,4 +22,4 @@ print("Pick a random choice of value from the list without duplicates : ", rando
 print()
 print("The correct order of the values with the list : ", fruits)
 random.shuffle(fruits)
-print("Shuffle the values within the group : ", fruits)
+print("Shuffle the values within the list : ", fruits)
