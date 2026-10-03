@@ -1,3 +1,5 @@
+## Random module
+
 In this module, I think there will be a lot of oppurtunities to implement it, let's list all of them :
 
 1. Synthetic data generation
@@ -56,6 +58,7 @@ different timestamps
 different transaction IDs
 ```
 for example : 
+```
 T10001 | C9281 | ₹499    | UPI        | SUCCESS
 T10002 | C3812 | ₹1,250  | CARD       | SUCCESS
 T10003 | C9122 | ₹80     | NETBANKING | FAILED
