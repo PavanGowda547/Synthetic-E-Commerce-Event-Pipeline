@@ -1,0 +1,66 @@
+{
+  "Electronics": {
+    "Mobile Phones": ["Android Phones", "iPhones", "Feature Phones", "Phone Cases", "Screen Protectors"],
+    "Laptops & Computers": ["Laptops", "Desktops", "Monitors", "Keyboards", "Mice", "Laptop Bags"],
+    "Audio": ["Wired Headphones", "Wireless Earbuds", "Bluetooth Speakers", "Home Theater Systems", "Soundbars"],
+    "Cameras": ["DSLR Cameras", "Mirrorless Cameras", "Action Cameras", "Camera Lenses", "Tripods"],
+    "Wearables": ["Smartwatches", "Fitness Bands", "VR Headsets"],
+    "Gaming": ["Consoles", "Controllers", "Gaming Headsets", "Gaming Chairs", "Video Games"],
+    "TV & Home Theater": ["LED TVs", "Smart TVs", "Streaming Devices", "TV Mounts"],
+    "Accessories": ["Chargers", "Power Banks", "Cables", "Memory Cards", "USB Drives"]
+  },
+  "Clothing": {
+    "Men": ["T-Shirts", "Shirts", "Jeans", "Jackets", "Ethnic Wear", "Innerwear"],
+    "Women": ["Tops", "Dresses", "Jeans", "Sarees", "Kurtis", "Innerwear"],
+    "Kids": ["Boys Clothing", "Girls Clothing", "Infant Wear"],
+    "Footwear": ["Sneakers", "Formal Shoes", "Sandals", "Sports Shoes", "Slippers"],
+    "Winter Wear": ["Sweaters", "Jackets", "Thermals", "Scarves"]
+  },
+  "Health & Medicine": {
+    "OTC Medicine": ["Pain Relief", "Cold & Flu", "Digestive Health", "Allergy Relief"],
+    "Vitamins & Supplements": ["Multivitamins", "Protein Supplements", "Herbal Supplements", "Immunity Boosters"],
+    "Personal Care": ["Oral Care", "Skin Care", "Hair Care", "Bath & Body"],
+    "Medical Devices": ["Thermometers", "BP Monitors", "Glucometers", "Nebulizers"],
+    "First Aid": ["Bandages", "Antiseptics", "First Aid Kits"]
+  },
+  "Daily Necessities": {
+    "Staples": ["Rice", "Flour", "Pulses", "Cooking Oil", "Sugar & Salt"],
+    "Beverages": ["Tea", "Coffee", "Juices", "Soft Drinks", "Water"],
+    "Snacks": ["Chips", "Biscuits", "Namkeen", "Chocolates"],
+    "Household Cleaning": ["Detergents", "Dishwashing", "Floor Cleaners", "Air Fresheners"],
+    "Personal Hygiene": ["Soaps", "Shampoos", "Sanitary Care", "Deodorants"]
+  },
+  "Home & Kitchen": {
+    "Kitchen Appliances": ["Mixers", "Microwaves", "Refrigerators", "Cookware"],
+    "Furniture": ["Sofas", "Beds", "Tables", "Chairs", "Storage"],
+    "Home Decor": ["Wall Art", "Lighting", "Curtains", "Rugs"],
+    "Bedding & Bath": ["Bedsheets", "Towels", "Pillows", "Blankets"]
+  },
+  "Books & Stationery": {
+    "Books": ["Fiction", "Non-Fiction", "Academic", "Children's Books", "Comics"],
+    "Stationery": ["Notebooks", "Pens", "Art Supplies", "Office Supplies"]
+  },
+  "Beauty": {
+    "Makeup": ["Face", "Eyes", "Lips", "Nails"],
+    "Skincare": ["Moisturizers", "Sunscreen", "Serums", "Face Wash"],
+    "Fragrances": ["Perfumes", "Deodorants", "Body Mists"]
+  },
+  "Sports & Fitness": {
+    "Fitness Equipment": ["Dumbbells", "Yoga Mats", "Resistance Bands", "Treadmills"],
+    "Sportswear": ["Activewear", "Sports Shoes", "Team Jerseys"],
+    "Outdoor": ["Cycling", "Camping Gear", "Swimming"]
+  },
+  "Toys & Baby": {
+    "Toys": ["Action Figures", "Board Games", "Educational Toys", "Soft Toys"],
+    "Baby Care": ["Diapers", "Baby Food", "Baby Gear", "Baby Bath"]
+  },
+  "Automotive": {
+    "Car Accessories": ["Car Care", "Car Electronics", "Interior Accessories"],
+    "Bike Accessories": ["Helmets", "Bike Care", "Riding Gear"]
+  },
+  "Pet Supplies": {
+    "Food": ["Dog Food", "Cat Food", "Bird Food"],
+    "Accessories": ["Leashes", "Toys", "Grooming", "Bedding"]
+  }
+}
+
