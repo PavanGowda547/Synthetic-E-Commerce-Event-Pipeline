@@ -92,6 +92,33 @@ def build_products(num_products: int, rng: random.Random) -> list[dict]:
         })
     return products
 
+def build_users(num_users: int, rng: random.Random, faker_seed: int) -> list[dict]:
+    fake = Faker()
+    Faker.seed(faker_seed)
+    segments = ["new", "occasional", "regular", "power"]
+    # Most users are new/occasional; few are power users. This segment
+    # itself later drives Pareto-weighted *activity* at generation time.
+    segment_weights = [0.45, 0.35, 0.15, 0.05]
+
+    users = []
+    for i in range(num_users):
+        signup = fake.date_between(start_date="-3y", end_date="-1d")
+        users.append({
+            "user_id": f"U{i:07d}",
+            "name": fake.name(),
+            "email": fake.unique.email(),
+            "city": fake.city(),
+            "state": fake.state(),
+            "country": "India" if i % 5 else fake.country(),
+            "signup_date": signup.isoformat(),
+            "segment": rng.choices(segments, weights=segment_weights, k=1)[0],
+            "preferred_categories": rng.sample(
+                list(json.load(open(SEED_DIR / "categories.json")).keys()),
+                k=rng.randint(1, 3),
+            ),
+        })
+    return users
+
 def main():
     parser = argparse.ArgumentParser(description="Seed the product & user catalogs")
     parser.add_argument("--num-products", type=int, default=4000)
@@ -106,6 +133,11 @@ def main():
     with open(PREDEFINED_DIR / "products.json", "w") as f:
         json.dump(products, f)
     print(f"Wrote {len(products)} products -> {PREDEFINED_DIR / 'products.json'}")
+
+    users = build_users(args.num_users, rng, faker_seed=args.seed)
+    with open(PREDEFINED_DIR / "users.json", "w") as f:
+        json.dump(users, f)
+    print(f"Wrote {len(users)} users -> {PREDEFINED_DIR / 'users.json'}")
 
 if __name__ == "__main__":
     main()
